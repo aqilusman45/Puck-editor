@@ -1,18 +1,142 @@
 import type { Config } from "tailwindcss";
+const colors = require("tailwindcss/colors");
 
-export default {
+const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Montserrat: ["'Montserrat', sans-serif"],
+        Lato: ["'Lato', sans-serif"],
+        Mulish: ["'Mulish', sans-serif"],
+      },
+
+      backgroundImage: {
+        "gradient-light": "linear-gradient(180deg, #253750 0%, #D8F1F1 100%)",
+        "gradient-dark": " linear-gradient(180deg, #253750 0%, #000 100%)",
+      },
+
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        "gray-50": "#F9FAFB",
+        "gray-100": "#F3F4F6", // primary_gray_color
+        "gray-200": "#E5E7EB",
+        "gray-300": "#D1D5DB",
+        "gray-400": "#9CA3AF",
+        "gray-500": "#6B7280",
+        "gray-600": "#4B5563", // Typography
+        "gray-700": "#374151",
+        "gray-800": "#1F2937",
+        "gray-900": "#111827", // Typography
+        "gray-1000": "#1A1A1A", // Typography
+        black: "#000000",
+        white: "#FFFFFF",
+        button_black: "#0F0F0F",
+        "gray-color": "#666",
+        grayish_white: "#FAFAFA",
+        blue_600: "#AEDBE8",
+
+        green: {
+          600: "#019F44",
+          800: "#123C2B",
+          900: "#123C2B",
+          200: "#CCECDA",
+        },
+
+        blue: {
+          800: "#1A4050",
+          900: "#051011",
+        },
+
+        primary_heading: "#051011",
+        primary_body: "#6B7280",
+        primary_support_green_700: "#0C7368",
+        primary_support_teal: "#5CD1BC",
+        primary_support_blue_400: "#0BA2D2",
+        primary_support_lilac: "#9DC1EC",
+        primary_support_purple_400: "#8988DE",
+        primary_support_purple_900: "#353AB8",
+      },
+      maxWidth: {
+        1440: "90rem",
+        720: "45rem",
+        800: "50rem",
+        1200: "75rem",
+        581: "36.313rem",
+        308: "19.25rem",
+        375: "23.438rem",
+        680: "42.5rem",
+        880: "55rem",
+        640: "40rem",
+        480: "30rem",
+        1184: "74rem",
+        544: "34rem",
+        763: "47.688rem",
+        944: "59rem",
+      },
+      spacing: {
+        318: "19.875rem",
+        460: "28.75rem",
+        139: "8.688rem",
+        124: "14rem",
+        28: "1.75rem",
+        106: "6.625rem",
+        108: "6.75rem",
+        133: "8.313rem",
+        156: "9.75rem",
+        120: "7.5rem",
+        680: "42.5rem",
+        590: "36.875rem",
+        70: "4.375rem",
+        128: "8rem",
+        280: "17.5rem",
+        434: "27.125rem",
+        75: "4.688rem",
+        60: "3.75rem",
+        63: "3.938rem",
+        84: "5.25rem",
+        29: "1.813rem",
+        35: "2.188rem",
+        37: "2.313rem",
+        26: "1.625rem",
+        45: "2.813rem",
+        72: "4.5rem",
+        52: "3.25rem",
+        90: "5.625rem",
+        129: "8.063rem",
+        216: "13.5rem",
+        54: "3.375rem",
+        22: "1.375rem",
+        98: "6.125rem",
+        197: "12.313rem",
+        55: "55px",
+        56: "3.5rem",
+        40: "40px",
+        13: "0.813rem",
+        104: "6.5rem",
+        110: "6.875rem",
+      },
+      fontSize: {
+        largeText: ["4.688rem", "5.313rem"],
+        caption: ["0.875rem", "1.125rem"],
+        h5: ["1.188rem", "1.563rem"],
+        h5_large: ["1.375rem", "1.875rem"],
+        h4: ["1.375rem", "2rem"],
+        h4_large: ["1.75rem", "2.438rem"],
+        h3: ["1.625rem", "2.2.25rem"],
+        h3_large: ["2.125rem", "2.75rem"],
+        h2: ["1.875rem", "2.5rem"],
+        h2_large: ["2.5rem", "3.25rem"],
+        h1: ["2.188rem", "2.875rem"],
+        h1_large: ["3.5rem", "4.313rem"],
+        7585: ["4.688rem", "5.313rem"],
       },
     },
   },
-  plugins: [],
-} satisfies Config;
+};
+export default config;

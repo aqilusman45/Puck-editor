@@ -1,0 +1,29 @@
+@layer base {
+  h1 {
+    @apply font-Montserrat text-h1 font-semibold  text-gray-1000 lg:text-h1_large;
+  }
+  h2 {
+    @apply font-Montserrat text-h2 font-semibold  text-gray-1000 lg:text-h2_large;
+  }
+  h3 {
+    @apply font-Montserrat text-h3 font-semibold  text-gray-1000 lg:text-h3_large;
+  }
+  h4 {
+    @apply font-Montserrat text-h4 font-semibold  text-gray-1000 lg:text-h4_large;
+  }
+  h5 {
+    @apply font-Montserrat text-h5 font-semibold  text-gray-1000 lg:text-h5_large;
+  }
+  h6 {
+    @apply font-Montserrat text-base font-bold leading-6 text-gray-1000;
+  }
+  caption {
+    @apply font-Lato  text-caption font-bold uppercase  tracking-[3.383px] text-gray-300;
+  }
+  p {
+    @apply font-Montserrat text-base leading-6 text-primary_body;
+  }
+  .largeText {
+    @apply font-Montserrat text-largeText  font-semibold  text-gray-1000;
+  }
+}
